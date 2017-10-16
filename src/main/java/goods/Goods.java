@@ -1,16 +1,16 @@
-package shopemulator.goods;
+package goods;
 
 public class Goods {
-    String name = null;
-    double price = 0;
-    String type = null,
-    volume = null,
-    sort = null;
-    int amount = 0;
-    int goodSold = 0;
-    int goodsPurchased = 0;
-    double profit = 0;
-    double spendingMoney = 0;
+    String name = null;         // имя
+    double price = 0;           // цена
+    String type = null,         // класс/группа
+    volume = null,              // объем
+    sort = null;                // крепкость напитка/состав
+    int amount = 0;             // количество шт.
+    int goodSold = 0;           // продано шт.
+    int goodsPurchased = 0;     // докуплено шт.
+    double profit = 0;          // прибыль
+    double spendingMoney = 0;   // потрачено на закупку
 
     public Goods() {
     }

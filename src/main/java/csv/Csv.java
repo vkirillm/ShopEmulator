@@ -1,12 +1,8 @@
-package shopemulator.csv;
+package csv;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.Flushable;
-import java.io.Closeable;
-import java.io.BufferedReader;
-import java.util.List;
+import java.io.*;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * These csv.Reader and csv.Writer implementations are based on the following description

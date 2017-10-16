@@ -1,13 +1,13 @@
-package shopemulator.report;
+package report;
 
-import shopemulator.goods.Goods;
+import goods.Goods;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
-public class Report{
+public class Report {
 
     public Report(ArrayList<Goods> goods){
 
@@ -20,16 +20,14 @@ public class Report{
                         "\n Прибыль магазина от продаж  "+new DecimalFormat("#0.00")
                                 .format((double)Math.round(drink.getProfit()*100)/100)
                                 .replace(',', '.')+
-                        "\n Затраченные средства на дозакупку товара "+drink.getSpendingMoney();
-                System.out.println(text);
-
+                        "\n Затраченные средства на дозакупку товара "+new DecimalFormat("#0.00")
+                        .format((double)Math.round(drink.getSpendingMoney()*100)/100)
+                        .replace(',', '.');
+//                System.out.println(text);
 
                     writer.write(text);
                     writer.append('\n');
-
                     writer.flush();
-
-
             }
             writer.close();
         }
